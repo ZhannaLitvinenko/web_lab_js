@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet_form_pairs.css">
+    <script src="scripts_form.js"></script>
+</head>
+<body>
+<form id="input-form" onsubmit="return false">
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="name-input">Your name:</label>
+            <input class="form-control form-control-sm" id="name-input" type="text" placeholder="name">
+            <div class="valid-feedback">Name is correct.</div>
+            <div class="invalid-feedback">Name must contain only letters.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="surname-input">Your surname:</label>
+            <input class="form-control form-control-sm" id="surname-input" type="text" placeholder="surname">
+            <div class="valid-feedback">Surname is correct.</div>
+            <div class="invalid-feedback">Surname must contain only letters.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="country-input">Country:</label>
+            <input class="form-control form-control-sm" id="country-input" type="text" placeholder="country">
+            <div class="valid-feedback">Country is correct.</div>
+            <div class="invalid-feedback">Country must not be empty.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="city-input">City or Locality:</label>
+            <input class="form-control form-control-sm" id="city-input" type="text" placeholder="city/locality">
+            <div class="valid-feedback">City is correct.</div>
+            <div class="invalid-feedback">City must not be empty.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="address-input">Address:</label>
+            <input class="form-control form-control-sm" id="address-input" type="text" placeholder="address">
+            <div class="valid-feedback">Address is correct.</div>
+            <div class="invalid-feedback">Address must not be empty.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="post-index-input">Post index:</label>
+            <input class="form-control form-control-sm" id="post-index-input" type="text" placeholder="postal index"
+                   maxlength="5">
+            <div class="valid-feedback">Postal index is correct.</div>
+            <div class="invalid-feedback">Postal index must contain only 5 digits.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <label for="email-input">E-mail address:</label>
+            <input class="form-control form-control-sm" id="email-input" type="email" placeholder="email@example.com">
+            <div class="valid-feedback">E-mail address is correct.</div>
+            <div class="invalid-feedback">E-mail address must be in format: email@example.com</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8">
+            <button type="submit" class="btn btn-info btn-block">Submit input</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
